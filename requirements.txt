@@ -1,3 +1,6 @@
 streamlit
 supabase
 requests
+git add app.py requirements.txt
+git commit -m "Added Supabase login + database"
+git push
