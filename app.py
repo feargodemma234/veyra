@@ -91,7 +91,7 @@ if st.session_state.get("show_cart", False):
 st.markdown('<div class="footer">', unsafe_allow_html=True)
 st.write("### Contact Us")
 st.markdown('<div class="contact-btn">', unsafe_allow_html=True)
-st.markdown('<a href="https://wa.me/2348012345678" target="_blank">WhatsApp</a>', unsafe_allow_html=True)
+st.markdown('<a href="https://wa.me/2348061715444" target="_blank">WhatsApp</a>', unsafe_allow_html=True)
 st.markdown('<a href="mailto:veyraofficial@gmail.com">Email Us</a>', unsafe_allow_html=True)
 st.markdown('</div>', unsafe_allow_html=True)
 st.write("© 2026 VEYRA. Built for leaders.")
