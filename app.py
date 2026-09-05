@@ -2,26 +2,35 @@ import streamlit as st
 
 st.set_page_config(page_title="VEYRA", layout="wide", page_icon="🔷")
 
-# CUSTOM CSS FOR LUXURY LOOK
-st.markdown("""
+# st.markdown("""
 <style>
-    .stApp { background-color: #000000; }
-    .navbar { display: flex; justify-content: space-between; padding: 20px 5%; background: #000; position: sticky; top: 0; z-index: 99; }
+    /* MAIN BACKGROUND */
+    .stApp { background-color: #0A0F2C; }  /* DARK NAVY BLUE */
+    
+    /* NAVBAR */
+    .navbar { display: flex; justify-content: space-between; padding: 20px 5%; background: #0A0F2C; position: sticky; top: 0; z-index: 99; }
     .logo { font-size: 32px; font-weight: 900; color: white; letter-spacing: 3px; }
     .cart-btn { background: #FFC107; color: #000; padding: 10px 25px; border-radius: 50px; font-weight: 700; border: none; }
+    
+    /* HERO */
     .hero { 
         height: 60vh; 
-        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+        background: linear-gradient(rgba(10,15,44,0.7), rgba(10,15,44,0.7)), 
         url('https://images.unsplash.com/photo-1441986300917-64674bd60018?w=1200') center/cover;
         display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;
     }
     .hero h1 { color: white; font-size: 60px; }
-    .shop-btn { background: white; color: black; padding: 18px 60px; border-radius: 50px; font-size: 20px; font-weight: 800; border: none; }
-    .product-card { background: #111; padding: 20px; border-radius: 15px; text-align: center; }
+    .shop-btn { background: #FFC107; color: #0A0F2C; padding: 18px 60px; border-radius: 50px; font-size: 20px; font-weight: 800; border: none; }
+    
+    /* PRODUCT CARDS */
+    .product-card { background: #121935; padding: 20px; border-radius: 15px; text-align: center; border: 1px solid #1E2A5E; }
     .price { color: #FFC107; font-size: 22px; font-weight: 700; }
+    .stButton>button { background: #1E2A5E; color: white; border-radius: 10px; border: 1px solid #FFC107; }
+    .stButton>button:hover { background: #FFC107; color: #0A0F2C; }
+    
+    h2, h3 { color: white !important; }
 </style>
 """, unsafe_allow_html=True)
-
 # SESSION STATE FOR CART
 if 'cart' not in st.session_state:
     st.session_state.cart = 0
