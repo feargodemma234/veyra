@@ -15,7 +15,7 @@ st.markdown("""
         padding: 20px 5%; background: #0A0F2C; position: sticky; top: 0; z-index: 99;
         border-bottom: 1px solid #1E2A5E;
     }
-    .logo-text { font-size: 32px; font-weight: 900; color: white; letter-spacing: 3px; }
+    .st.image("https://placehold.co/200x200/121935/FFC107?text=VEYRA", width=200)
     
     .stButton>button[kind="secondary"] { 
         background: #FFC107; color: #0A0F2C; padding: 10px 25px; border-radius: 50px; 
